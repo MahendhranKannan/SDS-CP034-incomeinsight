@@ -1,0 +1,36 @@
+PS>git remote -v
+origin  https://github.com/MahendhranKannan/SDS-CP034-incomeinsight.git (fetch)
+origin  https://github.com/MahendhranKannan/SDS-CP034-incomeinsight.git (push)
+PS>git remote add upstream https://github.com/SuperDataScience-Community-Projects/SDS-CP034-incomeinsight
+PS>git remote -v
+origin  https://github.com/MahendhranKannan/SDS-CP034-incomeinsight.git (fetch)
+origin  https://github.com/MahendhranKannan/SDS-CP034-incomeinsight.git (push)
+upstream        https://github.com/SuperDataScience-Community-Projects/SDS-CP034-incomeinsight (fetch)   
+upstream        https://github.com/SuperDataScience-Community-Projects/SDS-CP034-incomeinsight (push)    
+PS>git fetch upstream
+remote: Enumerating objects: 19, done.
+remote: Counting objects: 100% (19/19), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 16 (delta 5), reused 13 (delta 4), pack-reused 0 (from 0)
+Unpacking objects: 100% (16/16), 15.06 KiB | 100.00 KiB/s, done.
+From https://github.com/SuperDataScience-Community-Projects/SDS-CP034-incomeinsight
+ * [new branch]      main       -> upstream/main
+PS>git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+PS>git merge upstream/main
+Updating c4d74e9..b89231d
+Fast-forward
+ REPORT-ADV.md                                      |  142 ++
+ REPORT-BEG.md                                      |  144 ++
+ requirements.txt                                   |   13 +-
+ .../Oluwatunmise-Olaoluwa/incomeinsight.ipynb      | 2403 ++++++++++++++++++++
+ submissions/Oluwatunmise-Olaoluwa/requirements.txt |   42 +
+ 5 files changed, 2743 insertions(+), 1 deletion(-)
+ create mode 100644 REPORT-ADV.md
+ create mode 100644 REPORT-BEG.md
+ create mode 100644 submissions/Oluwatunmise-Olaoluwa/incomeinsight.ipynb
+ create mode 100644 submissions/Oluwatunmise-Olaoluwa/requirements.txt
+PS>git push origin main
+Everything up-to-date
+PS>
